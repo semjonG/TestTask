@@ -22,7 +22,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Ofc-zF-oqj">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="164" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Ofc-zF-oqj">
                                 <rect key="frame" x="16" y="352" width="343" height="361"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
@@ -147,8 +147,10 @@
                     </view>
                     <connections>
                         <outlet property="addChildButton" destination="FqX-SJ-dpI" id="qsV-RL-fhK"/>
+                        <outlet property="ageTextField" destination="FXz-HV-7Ln" id="FsA-sU-4Uf"/>
                         <outlet property="ageView" destination="97f-ml-dgV" id="SqV-JT-WRu"/>
                         <outlet property="cleanAllButton" destination="Wrf-J7-OhW" id="T0K-HW-TXI"/>
+                        <outlet property="nameTextField" destination="GeS-A6-Duy" id="goa-0T-gBr"/>
                         <outlet property="nameView" destination="QMI-mO-2Y9" id="QGi-aS-nce"/>
                         <outlet property="tableView" destination="Ofc-zF-oqj" id="p5i-7h-J8J"/>
                     </connections>

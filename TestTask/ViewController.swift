@@ -9,6 +9,9 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var ageTextField: UITextField!
+    
     @IBOutlet weak var nameView: UIView!
     @IBOutlet weak var ageView: UIView!
 
@@ -34,15 +37,17 @@ class ViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "Сбросить все данные", style: .destructive , handler:{ (UIAlertAction)in
             self.childrenAmount = []
             self.addChildButton.isHidden = false
+            self.nameTextField.text = " "
+            self.ageTextField.text = " "
             self.tableView.reloadData()
         }))
         
         alert.addAction(UIAlertAction(title: "Отмена", style: .cancel, handler:{ (UIAlertAction)in
         }))
         
-        self.present(alert, animated: true, completion: {
-            print("completion block")
-        })
+        self.present(alert, animated: true, completion: {})
+        
+        
     }
     
     func elementsCustomisation() {

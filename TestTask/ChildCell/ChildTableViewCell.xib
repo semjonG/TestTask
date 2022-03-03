@@ -17,61 +17,49 @@
                 <rect key="frame" x="0.0" y="0.0" width="343" height="164"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aAu-sy-AUx" userLabel="cellNameView">
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aAu-sy-AUx" userLabel="cellNameView">
                         <rect key="frame" x="15" y="9" width="285" height="68"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Vj-t4-cXF">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Vj-t4-cXF">
                                 <rect key="frame" x="6" y="26" width="273" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="taW-tK-iHe">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Имя" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="taW-tK-iHe">
                                 <rect key="frame" x="6" y="5" width="32" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                 <color key="textColor" systemColor="systemGray2Color"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="6Vj-t4-cXF" firstAttribute="top" secondItem="taW-tK-iHe" secondAttribute="bottom" constant="2" id="3T3-fC-Zz2"/>
-                            <constraint firstAttribute="trailing" secondItem="taW-tK-iHe" secondAttribute="trailing" constant="247" id="7td-87-WGa"/>
-                            <constraint firstItem="6Vj-t4-cXF" firstAttribute="leading" secondItem="aAu-sy-AUx" secondAttribute="leading" constant="6" id="DWy-8C-WTK"/>
-                            <constraint firstAttribute="bottom" secondItem="6Vj-t4-cXF" secondAttribute="bottom" constant="8" id="Opc-jM-7Hm"/>
-                            <constraint firstItem="taW-tK-iHe" firstAttribute="top" secondItem="aAu-sy-AUx" secondAttribute="top" constant="5" id="hc1-iu-31T"/>
-                            <constraint firstAttribute="height" constant="68" id="jeP-2L-8D2"/>
-                            <constraint firstItem="taW-tK-iHe" firstAttribute="leading" secondItem="aAu-sy-AUx" secondAttribute="leading" constant="6" id="m9n-Ai-bMV"/>
-                            <constraint firstAttribute="trailing" secondItem="6Vj-t4-cXF" secondAttribute="trailing" constant="6" id="ytu-46-UwS"/>
-                        </constraints>
                     </view>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y6c-98-0NT" userLabel="cellAgeViev">
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y6c-98-0NT" userLabel="cellAgeViev">
                         <rect key="frame" x="15" y="85" width="285" height="68"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UJj-lg-iyn">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UJj-lg-iyn">
                                 <rect key="frame" x="6" y="26" width="273" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Возраст" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ihI-GX-9tF">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Возраст" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ihI-GX-9tF">
                                 <rect key="frame" x="6" y="5" width="63" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                 <color key="textColor" systemColor="systemGray2Color"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="ihI-GX-9tF" secondAttribute="trailing" constant="216" id="4RQ-Yd-Lk9"/>
-                            <constraint firstItem="ihI-GX-9tF" firstAttribute="leading" secondItem="Y6c-98-0NT" secondAttribute="leading" constant="6" id="DlH-or-8RK"/>
-                            <constraint firstItem="UJj-lg-iyn" firstAttribute="top" secondItem="ihI-GX-9tF" secondAttribute="bottom" constant="2" id="GII-w9-M1h"/>
-                            <constraint firstItem="ihI-GX-9tF" firstAttribute="top" secondItem="Y6c-98-0NT" secondAttribute="top" constant="5" id="LoJ-yF-E0m"/>
-                            <constraint firstAttribute="trailing" secondItem="UJj-lg-iyn" secondAttribute="trailing" constant="6" id="Twb-Rq-Fd1"/>
-                            <constraint firstItem="UJj-lg-iyn" firstAttribute="leading" secondItem="Y6c-98-0NT" secondAttribute="leading" constant="6" id="lQG-op-1Nc"/>
-                            <constraint firstAttribute="height" constant="68" id="r1H-ZY-elJ"/>
-                        </constraints>
                     </view>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5R4-72-F02">
-                        <rect key="frame" x="310" y="4" width="29" height="31"/>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5R4-72-F02">
+                        <rect key="frame" x="294" y="4" width="45" height="31"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="tintColor" red="1" green="0.020679816603660583" blue="0.39967238903045654" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <state key="normal" title="Button"/>
                         <buttonConfiguration key="configuration" style="plain" image="xmark.circle" catalog="system"/>
@@ -80,22 +68,8 @@
                         </connections>
                     </button>
                 </subviews>
-                <constraints>
-                    <constraint firstItem="5R4-72-F02" firstAttribute="leading" secondItem="aAu-sy-AUx" secondAttribute="trailing" constant="10" id="bUU-JC-f0F"/>
-                    <constraint firstItem="Y6c-98-0NT" firstAttribute="top" secondItem="aAu-sy-AUx" secondAttribute="bottom" constant="8" symbolic="YES" id="zbc-BU-Clg"/>
-                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
-            <constraints>
-                <constraint firstItem="njF-e1-oar" firstAttribute="bottom" secondItem="Y6c-98-0NT" secondAttribute="bottom" constant="11" id="7n9-uU-EDU"/>
-                <constraint firstItem="Y6c-98-0NT" firstAttribute="leading" secondItem="njF-e1-oar" secondAttribute="leading" constant="15" id="GK2-Bl-TwF"/>
-                <constraint firstItem="aAu-sy-AUx" firstAttribute="top" secondItem="njF-e1-oar" secondAttribute="top" constant="9" id="TS4-sO-s8U"/>
-                <constraint firstItem="aAu-sy-AUx" firstAttribute="leading" secondItem="njF-e1-oar" secondAttribute="leading" constant="15" id="aI6-1E-skO"/>
-                <constraint firstItem="5R4-72-F02" firstAttribute="top" secondItem="njF-e1-oar" secondAttribute="top" constant="4" id="fCi-qT-ltI"/>
-                <constraint firstItem="njF-e1-oar" firstAttribute="trailing" secondItem="Y6c-98-0NT" secondAttribute="trailing" constant="43" id="nla-qU-G4z"/>
-                <constraint firstItem="njF-e1-oar" firstAttribute="trailing" secondItem="5R4-72-F02" secondAttribute="trailing" constant="4" id="o22-Cb-zda"/>
-                <constraint firstItem="njF-e1-oar" firstAttribute="trailing" secondItem="aAu-sy-AUx" secondAttribute="trailing" constant="43" id="rkX-PF-QcJ"/>
-            </constraints>
             <connections>
                 <outlet property="cellAgeView" destination="Y6c-98-0NT" id="QAY-6w-mMm"/>
                 <outlet property="cellNameView" destination="aAu-sy-AUx" id="dJj-Lx-aKh"/>
