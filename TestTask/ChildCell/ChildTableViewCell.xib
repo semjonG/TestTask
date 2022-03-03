@@ -75,6 +75,9 @@
                         <color key="tintColor" red="1" green="0.020679816603660583" blue="0.39967238903045654" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <state key="normal" title="Button"/>
                         <buttonConfiguration key="configuration" style="plain" image="xmark.circle" catalog="system"/>
+                        <connections>
+                            <action selector="deleteCellButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="kgK-em-o7r"/>
+                        </connections>
                     </button>
                 </subviews>
                 <constraints>
@@ -93,6 +96,10 @@
                 <constraint firstItem="njF-e1-oar" firstAttribute="trailing" secondItem="5R4-72-F02" secondAttribute="trailing" constant="4" id="o22-Cb-zda"/>
                 <constraint firstItem="njF-e1-oar" firstAttribute="trailing" secondItem="aAu-sy-AUx" secondAttribute="trailing" constant="43" id="rkX-PF-QcJ"/>
             </constraints>
+            <connections>
+                <outlet property="cellAgeView" destination="Y6c-98-0NT" id="QAY-6w-mMm"/>
+                <outlet property="cellNameView" destination="aAu-sy-AUx" id="dJj-Lx-aKh"/>
+            </connections>
             <point key="canvasLocation" x="138.40579710144928" y="153.34821428571428"/>
         </tableViewCell>
     </objects>

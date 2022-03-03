@@ -20,9 +20,29 @@ class ViewController: UIViewController {
     @IBOutlet weak var cleanAllButton: UIButton!
     
     @IBAction func addChildButtonPressed(_ sender: UIButton) {
+        childrenAmount.append(1)
+        tableView.reloadData()
+        
+        if childrenAmount.count == 5 {
+            addChildButton.isHidden = true
+        }
     }
 
     @IBAction func cleanAllButtonPressed(_ sender: UIButton) {
+        let alert = UIAlertController()
+        
+        alert.addAction(UIAlertAction(title: "Сбросить все данные", style: .destructive , handler:{ (UIAlertAction)in
+            self.childrenAmount = []
+            self.addChildButton.isHidden = false
+            self.tableView.reloadData()
+        }))
+        
+        alert.addAction(UIAlertAction(title: "Отмена", style: .cancel, handler:{ (UIAlertAction)in
+        }))
+        
+        self.present(alert, animated: true, completion: {
+            print("completion block")
+        })
     }
     
     func elementsCustomisation() {
@@ -49,9 +69,34 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tableView.delegate = self
+        tableView.dataSource = self
+        
         elementsCustomisation()
+        
+        tableView.register(UINib(nibName: "ChildTableViewCell", bundle: nil), forCellReuseIdentifier: "ChildTableViewCell")
     }
 
 
 }
 
+extension ViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return childrenAmount.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ChildTableViewCell", for: indexPath) as! ChildTableViewCell
+        
+        cell.delegate = self
+        
+        return cell
+    }
+}
+
+extension ViewController: ChildCellDelegate {
+    func deleteButtonDelegate(indexPath: IndexPath) {
+        childrenAmount.remove(at: indexPath.row)
+        tableView.reloadData()
+    }
+}
