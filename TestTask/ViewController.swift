@@ -47,7 +47,6 @@ class ViewController: UIViewController {
         
         self.present(alert, animated: true, completion: {})
         
-        
     }
     
     func elementsCustomisation() {
@@ -74,6 +73,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        hideKeyboardWhenTappedAround()
+        
         tableView.delegate = self
         tableView.dataSource = self
         
@@ -81,8 +82,6 @@ class ViewController: UIViewController {
         
         tableView.register(UINib(nibName: "ChildTableViewCell", bundle: nil), forCellReuseIdentifier: "ChildTableViewCell")
     }
-
-
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
@@ -103,5 +102,17 @@ extension ViewController: ChildCellDelegate {
     func deleteButtonDelegate(indexPath: IndexPath) {
         childrenAmount.remove(at: indexPath.row)
         tableView.reloadData()
+    }
+}
+
+extension ViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
 }
