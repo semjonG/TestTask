@@ -16,4 +16,4 @@
 - Storyboard, XIB
 - MVC 
 
-![alt tag](https://raw.githubusercontent.com/semjonG/TestTask/main/Снимок%20экрана%202022-03-27%20в%2019.15.06.png)
+<img width="256" alt="example" src="https://raw.githubusercontent.com/semjonG/TestTask/main/Снимок%20экрана%202022-03-27%20в%2019.15.06.png"><br>
