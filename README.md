@@ -1,4 +1,3 @@
-Small test task with 
 # AlefTestTask
 
 ### Задание:
